@@ -53,7 +53,18 @@ function valida_envia()
     { 
         alert("Tiene que introducir su Correo") 
         document.formulario.Correo.focus() 
-        return 0; 
+        return 0;   
+    }
+    else
+    {
+        valor = document.formulario.Correo.value;
+        if (!(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valor)))
+        {
+            alert("La dirección de email es incorrecta.");
+            document.formulario.Correo.focus()
+            console.log(valor)
+            return false;
+        }
     }
     
     //el formulario se envia 
