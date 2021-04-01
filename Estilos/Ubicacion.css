@@ -15,6 +15,12 @@ body
   font-family: Comfortaa;
   background-color: #FCF4EB;
 }
+h2
+{
+  text-align: center;
+  font-family: Comfortaa-bold;
+  font-size: 50px;
+}
 .hijoUbicacion
 {
     display: flex;
