@@ -1,0 +1,49 @@
+@font-face 
+  {
+    font-family: Comfortaa;
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    font-family: Comfortaa-bold;
+    src: url(Comfortaa/Comfortaa-Bold.ttf);
+  }
+
+body
+{
+  font-family: Comfortaa;
+  background-color: #E9A663;
+ 
+}
+.barra_navegacion 
+{
+  
+    text-align: center;
+    display: inline;
+    color:#025157;
+    width: 75%; 
+}  
+a
+{
+  font-family: Comfortaa;
+  text-decoration: none;
+}
+li/*La parte li es para que las lista de la barra de navegacion se haga en linea*/
+{
+    display: inline;
+    margin-left: 7%;
+}
+.header-conteiner-padre
+{
+  display: flex;
+  align-items: center;
+}
+.Logo
+{
+  margin-left: 5%;
+  background-color: aliceblue;
+}
+a
+{
+  font-size: 19px;
+  font-family: Comfortaa-bold;
+  color: black;
+  text-align: center;
+}

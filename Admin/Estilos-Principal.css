@@ -1,0 +1,65 @@
+@font-face 
+  {
+    font-family: Comfortaa;
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    font-family: Comfortaa-medium;
+    src: url(Comfortaa/Comfortaa-Light.ttf);
+    font-family: Comfortaa-semibold;
+    src: url(Comfortaa/Comfortaa-SemiBold.ttf);
+    font-family: Comfortaa-bold;
+    src: url(Comfortaa/Comfortaa-Bold.ttf);
+  }
+
+body
+{
+  font-family: Comfortaa;
+  background-color: #FCF4EB;
+}
+a
+{
+  text-decoration: none;
+}
+.Cambio-habitaciones
+{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Boton-Servivicos-Cambio
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Formulario
+{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2
+{
+  text-align: center;
+  font-family: Comfortaa-bold;
+  font-size: 40px;
+}
+
+footer
+{
+  background-color: #E9C863;
+  height: 200px;
+}
+.Foo-Text
+{
+  
+  padding-top: 4%;
+  
+  height: 10px;
+}
+.Foo-Redes
+{
+  align-self: center;
+  margin-right: 2%;
+}

@@ -1,0 +1,142 @@
+@font-face 
+  {
+    font-family: Comfortaa;
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    font-family: Comfortaa-medium;
+    src: url(Comfortaa/Comfortaa-Light.ttf);
+    font-family: Comfortaa-semibold;
+    src: url(Comfortaa/Comfortaa-SemiBold.ttf);
+    font-family: Comfortaa-bold;
+    src: url(Comfortaa/Comfortaa-Bold.ttf);
+  }
+
+body
+{
+  font-family: Comfortaa;
+  background-color: #FCF4EB;
+}
+a
+{
+  text-decoration: none;
+}
+#Banner-principal
+{
+  margin-left: 4%;
+}
+.hijoUbicacion
+{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-around;
+}
+.Datos-Mapa
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  text-align: justify;
+
+}
+.tabla-promo
+{
+  font-family: Comfortaa;
+}
+.Horario
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  text-align: justify;
+}
+.Direccion
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  text-align: justify;
+}
+.Formulario
+{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.Comentarios
+{
+  display: block;
+  text-align: center;
+}
+.Lista_Servicios
+{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+
+}
+li
+{
+  display: inline;
+  justify-content: center;
+  margin: 4%;
+}
+.Boton_servicios
+{
+  font-family: Comfortaa-semibold;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border: 0;
+    background-color: #63A6E9;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+
+.Promos
+{
+  font-family: Comfortaa;
+  background-color: #F7DEC4;
+}
+h2
+{
+  text-align: center;
+  font-family: Comfortaa-bold;
+  font-size: 50px;
+}
+.lista-faqs
+{
+  text-align: center;
+  
+  margin-left: 7%;
+  margin-right: 7%;
+}
+footer
+{
+  background-color: #E9C863;
+  height: 200px;
+}
+.Foo-Text
+{
+  
+  padding-top: 4%;
+  
+  height: 10px;
+}
+.Foo-Redes
+{
+  align-self: center;
+  margin-right: 2%;
+}
