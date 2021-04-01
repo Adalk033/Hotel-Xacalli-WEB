@@ -14,7 +14,7 @@
     <section class="Formulario">
         <img src="Imagenes/Banner Principal.jpg" id="Banner-principal" alt="Banner" width="50%">
         <table align="center">
-            <form>
+            <form method="GET" name="formulario" action="">
                 <tr>
                     <td>
                         Fecha a reservar: 
@@ -80,7 +80,7 @@
                 <tr><td><br></td></tr>
                 <tr>
                     <td colspan>
-                        <input type= "submit" name="Enviar">
+                        <input type= "button" name="Enviar" onclick="valida_envia()" value="Enviar"> 
                     </td>
 
                 </tr>
