@@ -1,12 +1,36 @@
+window.onload = function()
+{
+    var fecha = new Date(); //Fecha actual
+    var mes = fecha.getMonth()+1; //obteniendo mes
+    var dia = fecha.getDate(); //obteniendo dia
+    var ano = fecha.getFullYear(); //obteniendo año
+    if(dia<10)
+      dia='0'+dia; //agrega cero si el menor de 10
+    if(mes<10)
+      mes='0'+mes //agrega cero si el menor de 10
+    document.formulario.Fecha.min=ano+"-"+mes+"-"+dia;
+    document.formulario.Fecha.value=ano+"-"+mes+"-"+dia;
+  }
+
 function valida_envia()
 { 
     //validacion de la fecha----in progress
-    if (document.formulario.Fecha.value.length==0)
+    if (document.formulario.Fecha.value=="")
     { 
-        alert("Tiene que escribir su nombre") 
-        document.fvalida.nombre.focus() 
+        alert("Tiene que introducir una fecha") 
+        document.formulario.Fecha.focus() 
         return 0; 
     } 
+    else
+    {
+        if( document.formulario.Fecha.value < date_today)
+        {
+            alert("Introduzca una fecha valida") 
+            document.formulario.Fecha.focus() 
+            return 0; 
+        }
+
+    }
     
     //validacion del nombre
     if (document.formulario.Nombre.value=="")
@@ -69,5 +93,6 @@ function valida_envia()
     
     //el formulario se envia 
     alert("Muchas gracias por enviar el formulario"); 
-    document.fvalida.submit(); 
+    document.formulario.submit(); 
 }   
+
