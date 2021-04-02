@@ -8,14 +8,6 @@ function valida_envia()
         document.formulario.Fecha.focus() 
         return 0; 
     }
-    
-    //validacion de mascotas
-    if (document.formulario.Mascotas.value=="")
-    { 
-        alert("Tiene 0 o mas mascotas") 
-        document.formulario.Mascotas.focus() 
-        return 0; 
-    }
 
     //validacion de correo
     if (document.formulario.Correo.value=="")
@@ -34,6 +26,14 @@ function valida_envia()
             console.log(valor)
             return false;
         }
+    }
+    
+    //validacion de mascotas
+    if (document.formulario.Mascotas.value=="")
+    { 
+        alert("Tiene 0 o mas mascotas") 
+        document.formulario.Mascotas.focus() 
+        return 0; 
     }
     
     //el formulario se envia 
