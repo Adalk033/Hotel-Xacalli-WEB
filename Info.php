@@ -8,18 +8,16 @@
     <title>Forms</title>
 </head>
 <body>
-    <script src="Scripts/Vaidacion-Forms.js"></script>
-
     <br><br>
     <section class="Formulario">
         <img src="Imagenes/Banner Principal.jpg" id="Banner-principal" alt="Banner" width="50%">
         Informacion recibida:
         <br><br>
+        La fecha introducida es: <?php $fec = $_POST['Fecha']; echo $_POST['Fecha']; ?>
+        <br><br>
         El nombre introducido es: <?php $nom = $_POST['Nombre']; echo $nom ?>
         <br><br>
         El apellido introducido es: <?php $ap = $_POST['Apellido']; echo $ap ?>
-        <br><br>
-        La fecha introducida es: <?php $fec = $_POST['Fecha']; echo $fec ?>
         <br><br>
         La cantidad de mascotas es: <?php $mas = $_POST['Mascotas']; echo $mas ?>
         <br><br>
