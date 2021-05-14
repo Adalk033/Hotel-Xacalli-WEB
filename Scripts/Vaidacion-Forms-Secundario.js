@@ -9,6 +9,22 @@ function valida_envia()
         return 0; 
     }
 
+    //validacion de limite de estancia
+    if (document.formulario.Fecha2.value=="")
+    { 
+        alert("Tiene que introducir una fecha") 
+        document.formulario.Fecha2.focus() 
+        return 0; 
+    }
+
+    //validacion de Habitacion
+    if (document.formulario.radio.value=="")
+    { 
+        alert("Tiene que introducir una fecha") 
+        document.formulario.radio.focus() 
+        return 0; 
+    }
+
     //validacion de correo
     if (document.formulario.Correo.value=="")
     { 
@@ -54,4 +70,6 @@ window.onload = function()
       mes='0'+mes //agrega cero si el menor de 10
     document.formulario.Fecha.min=ano+"-"+mes+"-"+dia;
     document.formulario.Fecha.value=ano+"-"+mes+"-"+dia;
+    document.formulario.Fecha2.min=ano+"-"+mes+"-"+dia;
+    document.formulario.Fecha2.value=ano+"-"+mes+"-"+dia;
 }

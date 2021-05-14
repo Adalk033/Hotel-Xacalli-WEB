@@ -7,10 +7,10 @@ function valida_envia()
         return 0; 
     }
 
-    if(document.getElementById("No").checked)
-        window.location.replace('Forms.html');
     if(document.getElementById("Si").checked)
-        window.location.replace('Forms-Secundario.html');
+        window.location.replace('Forms-Secundario.php');
+    if(document.getElementById("No").checked)
+        window.location.replace('Forms.php');
 }   
 
 

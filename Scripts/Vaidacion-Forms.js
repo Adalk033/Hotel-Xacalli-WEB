@@ -1,11 +1,28 @@
 
+
 function valida_envia()
 { 
-    //validacion de la fecha----in progress
+    //validacion de la fecha
     if (document.formulario.Fecha.value=="")
     { 
         alert("Tiene que introducir una fecha") 
         document.formulario.Fecha.focus() 
+        return 0; 
+    }
+
+    //validacion del limite de estancia
+    if (document.formulario.Fecha2.value=="")
+    { 
+        alert("Tiene que introducir un limite de estancia") 
+        document.formulario.Fecha2.focus() 
+        return 0; 
+    }
+
+    //validacion de la habitacion
+    if (document.formulario.radio.value=="")
+    { 
+        alert("Tiene que seleccionar una habitacion") 
+        document.formulario.radio.focus() 
         return 0; 
     }
         
@@ -70,7 +87,8 @@ function valida_envia()
     
     //el formulario se envia 
     alert("Muchas gracias por enviar el formulario"); 
-    document.formulario.submit(); 
+    document.formulario.submit();
+    
 }   
 
 
@@ -86,4 +104,6 @@ window.onload = function()
       mes='0'+mes //agrega cero si el menor de 10
     document.formulario.Fecha.min=ano+"-"+mes+"-"+dia;
     document.formulario.Fecha.value=ano+"-"+mes+"-"+dia;
+    document.formulario.Fecha2.min=ano+"-"+mes+"-"+dia;
+    document.formulario.Fecha2.value=ano+"-"+mes+"-"+dia;
 }
