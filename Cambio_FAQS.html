@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilos/FaqsA.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Scripts/validacion_precios_pregun.js"></script>
+    <a name="FAQS"></a>
+    <section class="FAQS" align="Left">
+    <h2>FAQS</h2><br>
+    <p align="center">Aqui lo que se hara sera cambiar la pregunta y respuesta segun seleccione</p><br>
+    <form action= "act_faqs.php" method="POST" name="formulario">
+        <div class="Cambio-habitaciones">
+            <!--<select name="faqs">
+
+                <option>Pregunta 1</option>
+                
+                <option>Pregunta 2</option>
+
+                <option>Pregunta 3</option>
+
+                <option>Pregunta 4</option>
+
+                <option>Pregunta 5</option>-->
+
+                <div class="form-floating" id="select">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name = "faqs">
+                        <option >Pregunta 1</option>
+                        <option >Pregunta 2</option>
+                        <option >Pregunta 3</option>
+                        <option >Pregunta 4</option>
+                        <option >Pregunta 5</option>
+                    </select>
+                    <label for="floatingSelect">Seleccione una habitacion</label><br><br>
+                </div>
+
+            <!--</select>-->
+            <br>
+            <p>Cambio de texto de la Pregunta: </p>
+            <textarea name="preg_text">
+            </textarea>
+            <br>
+            <p>Cambio de texto de la Respuesta: </p>
+            <textarea name="res_text">
+            </textarea>
+            <br>
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <input class="btn btn-primary" type="button" name="Enviar" onclick="valida_envia()" value="Submit"><br><br>
+            </div> 
+        </div>
+        </section>
+    </form>
+</body>
+</html>
